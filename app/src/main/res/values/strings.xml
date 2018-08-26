@@ -94,4 +94,10 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="pref_title_about">About</string>
+    <string name="title_addexblogs2">Select Your Blog Type</string>
+    <string name="title_ab_addexblogs2">Register Your Blog</string>
+    <string name="desc_addexblogs2">Now, this app supports MetaWeblog API, TISTORY API, egloos API. Other blog services and APIs are not supported currently.</string>
+    <string name="api_value_1">MetaWeBlog API</string>
+    <string name="api_value_2">TISTORY API</string>
+    <string name="api_value_3">egloos API</string>
 </resources>

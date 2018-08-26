@@ -27,7 +27,9 @@
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".AddExBlogS2"></activity>
+        <activity
+            android:name=".AddExBlogS2"
+            android:label="@string/title_ab_addexblogs2"/>
     </application>
 
 </manifest>

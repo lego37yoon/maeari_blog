@@ -91,4 +91,10 @@
     <string name="pref_ringtone_silent">무음</string>
     <string name="pref_header_notifications">알림</string>
     <string name="pref_header_data_sync">데이터 및 동기화</string>
+    <string name="title_addexblogs2">사용중인 블로그의 \n API를 선택해주세요.</string>
+    <string name="title_ab_addexblogs2">블로그 등록하기</string>
+    <string name="desc_addexblogs2">현재, 이 앱은 MetaWeBlog API, 티스토리 API, 이글루스 API를 지원하고 있습니다. 타 서비스 및 API에 대한 지원은 조금 더 기다려 주세요.</string>
+    <string name="api_value_1">MetaWeBlog API</string>
+    <string name="api_value_2">티스토리 API</string>
+    <string name="api_value_3">이글루스 API</string>
 </resources>
