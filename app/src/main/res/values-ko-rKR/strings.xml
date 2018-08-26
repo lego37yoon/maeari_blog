@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">메아리 for Blog</string>
+    <string name="nav_header_title">계정 추가</string>
+    <string name="nav_header_subtitle">메아리 : 기본</string>
+    <string name="action_settings">설정</string>
+    <string name="main_home">팁</string>
+    <string name="main_accountlist">계정 관리</string>
+    <string name="tip_title_tutorial">튜토리얼</string>
+    <string name="tip_text_tutorial">튜토리얼을 다시 보고 싶으실 때에는, 설정 > 튜토리얼을 눌러주세요.</string>
+    <string name="action_dontseemore">다시보지않기</string>
+    <string name="action_ok">확인</string>
+    <string name="tip_title_acctype">지원하는 계정 종류</string>
+    <string name="tip_text_acctype">본 앱은 이글루스, 티스토리를 비롯해 MetaWeBlog API를 지원하는 블로그를 지원하고 있습니다.</string>
+    <string name="tip_text_moaratst">여러 블로그에 게시한 같은 글을 동시에 수정할 수 있습니다. 물론, 게시하는 것도 동시에 가능합니다.</string>
+    <string name="tip_title_moaratst">한 번에 글을 수정해보세요.</string>
+    <string name="add_existed_blog">기존 블로그 추가하기</string>
+    <string name="submenu_title">블로그 목록</string>
+    <string name="start_bt_add_exited_blog_s1">시작하기</string>
+    <string name="title_add_exited_blog_s1">"블로그 추가하기 "</string>
+    <string name="img_desc_add_exited_blog_s1">블로그 추가 마법사 설명 이미지</string>
+    <string name="desc_add_existed_blog_s1">"기존 블로그를 추가할 수 있습니다. \nMetaWeBlog, 티스토리, 이글루스 API를 지원합니다. "</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <string name="pref_desc_about">"앱 정보와 오픈소스 라이선스 정보를 볼 수 있습니다.\n    "</string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+
+    <string name="pref_title_sync_frequency">동기화 빈도</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">시스템 동기화 설정</string>
+
+    <!-- Example settings for Notifications -->
+
+    <string name="pref_title_new_message_notifications">새 알림</string>
+
+    <string name="pref_title_ringtone">벨소리</string>
+
+    <string name="pref_title_vibrate">진동</string>
+    <string name="title_activity_settings">설정</string>
+    <string name="pref_header_general">일반</string>
+    <string name="pref_title_about">정보</string>
+    <string name="pref_ringtone_silent">무음</string>
+    <string name="pref_header_notifications">알림</string>
+    <string name="pref_header_data_sync">데이터 및 동기화</string>
+</resources>

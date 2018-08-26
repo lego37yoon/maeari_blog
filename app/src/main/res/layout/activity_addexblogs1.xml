@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".AddExBlogS1">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <LinearLayout
+        android:id="@+id/text_group_a_e_b_s1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/add_blog_desc_s1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/img_desc_add_exited_blog_s1"
+            android:scaleType="fitEnd"
+            android:visibility="visible"
+            app:srcCompat="@drawable/blogadd" />
+
+        <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/title_add_exited_blog_s1"
+            android:textColor="@color/text_addexblogs1"
+            android:textSize="48sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/desc_add_e_blog_s1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/desc_add_existed_blog_s1"
+            android:textColor="@color/text_addexblogs1"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        style="?metaButtonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/black_overlay"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/bt_goto_step2"
+            style="?metaButtonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onGoToAEBS2"
+            android:text="@string/start_bt_add_exited_blog_s1"
+            android:textColor="@color/text_addexblogs1" />
+    </LinearLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+</FrameLayout>

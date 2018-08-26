@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffad35</color>
+    <color name="colorPrimaryDark">#f9a825</color>
+    <color name="colorAccent">#ff9800</color>
+    <color name="add_existed_blog_step1">#0099cc</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="navc_e_blog_s1">#005C7A</color>
+    <color name="text_addexblogs1">#9BE5E5</color>
+</resources>
