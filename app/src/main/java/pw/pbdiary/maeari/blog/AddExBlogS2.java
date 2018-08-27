@@ -3,6 +3,7 @@ package pw.pbdiary.maeari.blog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Adapter;
@@ -74,5 +75,16 @@ public class AddExBlogS2 extends AppCompatActivity {
         Intent goMWBlogAuth = new Intent(getApplicationContext(), MWBlogAuthForm.class);
 
         startActivity(goMWBlogAuth);
+    }
+
+    public void gotoTistoryOAuthWeb(View view) {
+        Intent goTistoryOAuth = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.tistory.com/oauth/authorize?client_id=4043747cf8c75bec8f5ba21c106a8884&redirect_uri=http://localhost&response_type=token"));
+
+        startActivity(goTistoryOAuth);
+    }
+    public void gotoEgloosOAuthWeb(View view) {
+        Intent goEgloosOAuth = new Intent(Intent.ACTION_VIEW, Uri.parse("http://api.egloos.com/authorize?client_id=a404ee5d0f40f93ac53302166375d68d05b83e0d6"));
+
+        startActivity(goEgloosOAuth);
     }
 }
