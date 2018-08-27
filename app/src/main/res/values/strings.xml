@@ -100,4 +100,8 @@
     <string name="api_value_1">MetaWeBlog API</string>
     <string name="api_value_2">TISTORY API</string>
     <string name="api_value_3">egloos API</string>
+    <string name="tistoryOAuth_addexblogs2">Tistory OAuth Authorize</string>
+    <string name="egloosOAuth_addexblogs2">egloos OAuth Authorize</string>
+    <string name="MWBlogAuth_addexblogs2">MetaWeBlog API Authorize</string>
+    <string name="title_activity_mwblog_auth_form">블로그 등록하기</string>
 </resources>

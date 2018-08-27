@@ -97,4 +97,7 @@
     <string name="api_value_1">MetaWeBlog API</string>
     <string name="api_value_2">티스토리 API</string>
     <string name="api_value_3">이글루스 API</string>
+    <string name="tistoryOAuth_addexblogs2">티스토리 OAuth 인증하기</string>
+    <string name="egloosOAuth_addexblogs2">이글루스 OAuth 인증하기</string>
+    <string name="MWBlogAuth_addexblogs2">MetaWeBlog API 정보 입력하기</string>
 </resources>

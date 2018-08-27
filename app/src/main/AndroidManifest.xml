@@ -22,14 +22,33 @@
         <activity
             android:name=".AddExBlogS1"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/FullscreenTheme" />
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pw.pbdiary.maeari.blog.MainActivity" />
+        </activity>
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" />
-        <activity android:name=".AboutActivity" />
+        <activity android:name=".AboutActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pw.pbdiary.maeari.blog.SettingsActivity" />
+        </activity>
         <activity
             android:name=".AddExBlogS2"
-            android:label="@string/title_ab_addexblogs2"/>
+            android:label="@string/title_ab_addexblogs2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pw.pbdiary.maeari.blog.AddExBlogS1" />
+        </activity>
+        <activity
+            android:name=".MWBlogAuthForm"
+            android:label="@string/title_ab_addexblogs2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pw.pbdiary.maeari.blog.AddExBlogS2" />
+        </activity>
     </application>
 
 </manifest>
