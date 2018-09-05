@@ -113,4 +113,5 @@
     <string name="metaWeBlog_url">MetaWeBlog API URL Address</string>
     <string name="metaWeBlog_id">MetaWeBlog ID</string>
     <string name="metaApiKey">MetaWeBlog API Key</string>
+    <string name="sendmetaAPIvalue">NEXT</string>
 </resources>

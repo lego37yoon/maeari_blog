@@ -110,5 +110,6 @@
     <string name="metaWeBlog_url">MetaWeBlog API URL 주소</string>
     <string name="metaWeBlog_id">MetaWeBlog ID</string>
     <string name="metaApiKey">MetaWeBlog API 키</string>
+    <string name="sendmetaAPIvalue">다음</string>
 
 </resources>
