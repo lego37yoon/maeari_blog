@@ -110,4 +110,7 @@
     <!-- <string name="egloosChooseApiTitle">Choose API</string> -->
     <string name="egloos_id">Egloos ID</string>
     <string name="egloos_metaApiKey">Egloos API Key</string>
+    <string name="metaWeBlog_url">MetaWeBlog API URL Address</string>
+    <string name="metaWeBlog_id">MetaWeBlog ID</string>
+    <string name="metaApiKey">MetaWeBlog API Key</string>
 </resources>

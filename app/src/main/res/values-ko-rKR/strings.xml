@@ -107,5 +107,8 @@
     <string name="egloosChooseApiTitle">API 선택</string> -->
     <string name="egloos_id">이글루스 ID</string>
     <string name="egloos_metaApiKey">이글루스 API Key</string>
+    <string name="metaWeBlog_url">MetaWeBlog API URL 주소</string>
+    <string name="metaWeBlog_id">MetaWeBlog ID</string>
+    <string name="metaApiKey">MetaWeBlog API 키</string>
 
 </resources>
