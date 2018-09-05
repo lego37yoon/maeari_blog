@@ -39,7 +39,7 @@
             android:text="@string/egloosOAuth_addexblogs2"
             android:textSize="18sp"
             android:visibility="gone"
-            android:onClick="gotoEgloosOAuthWeb"/>
+            android:onClick="gotoMetaWeBlogEgloosForm"/>
 
         <Button
             android:id="@+id/tisOAuthButton"

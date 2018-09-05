@@ -103,5 +103,7 @@
     <string name="tistoryOAuth_addexblogs2">Tistory OAuth Authorize</string>
     <string name="egloosOAuth_addexblogs2">egloos OAuth Authorize</string>
     <string name="MWBlogAuth_addexblogs2">MetaWeBlog API Authorize</string>
-    <string name="title_activity_mwblog_auth_form">블로그 등록하기</string>
+    <string name="title_activity_mwblog_auth_form">Register Your Blog</string>
+    <string name="egloosChooseApiMessage">egloos now supports both MetaWeBlog API and egloos API. What do you want to choose?</string>
+    <string name="egloosChooseApiTitle">Choose API</string>
 </resources>

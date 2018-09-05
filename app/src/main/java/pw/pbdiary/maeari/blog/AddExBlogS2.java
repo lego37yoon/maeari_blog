@@ -1,5 +1,6 @@
 package pw.pbdiary.maeari.blog;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -82,9 +83,16 @@ public class AddExBlogS2 extends AppCompatActivity {
 
         startActivity(goTistoryOAuth);
     }
-    public void gotoEgloosOAuthWeb(View view) {
-        Intent goEgloosOAuth = new Intent(Intent.ACTION_VIEW, Uri.parse("http://api.egloos.com/authorize?client_id=a404ee5d0f40f93ac53302166375d68d05b83e0d6"));
+    /* public void openChooseApiDialog(View view) {
+        AlertDialog.Builder egloos_builder = new AlertDialog.Builder(getActivity());
+        egloos_builder .setMessage(R.string.egloosChooseApiMessage)
+                .setTitle(R.string.egloosChooseApiTitle);
+        AlertDialog egloosDialog = egloos_builder.create();
+    } */
 
-        startActivity(goEgloosOAuth);
+    public void gotoMetaWeBlogEgloosForm(View view) {
+        Intent goEgloosMetaWeAuth = new Intent(getApplicationContext(), MWEgloosAuthForm.class);
+
+        startActivity(goEgloosMetaWeAuth);
     }
 }

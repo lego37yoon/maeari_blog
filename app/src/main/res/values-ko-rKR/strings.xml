@@ -100,4 +100,7 @@
     <string name="tistoryOAuth_addexblogs2">티스토리 OAuth 인증하기</string>
     <string name="egloosOAuth_addexblogs2">이글루스 OAuth 인증하기</string>
     <string name="MWBlogAuth_addexblogs2">MetaWeBlog API 정보 입력하기</string>
+    <string name="title_activity_mwblog_auth_form">블로그 등록하기</string>
+    <string name="egloosChooseApiMessage">이글루스는 현재 MetaWeBlog API 및 자체 API를 지원하고 있습니다. 어떤 API를 이용하시겠습니까?</string>
+    <string name="egloosChooseApiTitle">API 선택</string>
 </resources>
