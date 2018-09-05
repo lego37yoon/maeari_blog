@@ -7,6 +7,23 @@
     tools:context=".MWBlogAuthForm"
     android:orientation="vertical">
 
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/egloos_id"/>
+    <EditText
+        android:id="@+id/egloosIDValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/egloos_metaApiKey"/>
+    <EditText
+        android:id="@+id/egloosMetaAPIValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
 
 </LinearLayout>

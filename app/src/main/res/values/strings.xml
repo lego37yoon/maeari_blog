@@ -96,14 +96,18 @@
     <string name="pref_title_about">About</string>
     <string name="title_addexblogs2">Select Your Blog Type</string>
     <string name="title_ab_addexblogs2">Register Your Blog</string>
-    <string name="desc_addexblogs2">Now, this app supports MetaWeblog API, TISTORY API, egloos API. Other blog services and APIs are not supported currently.</string>
-    <string name="api_value_1">MetaWeBlog API</string>
-    <string name="api_value_2">TISTORY API</string>
-    <string name="api_value_3">egloos API</string>
+    <string name="desc_addexblogs2">Now, this app supports MetaWeblog API and TISTORY API. Other blog services and APIs are not supported currently.</string>
+    <string name="api_value_1">Connect with your blog with MetaWeBlog API</string>
+    <string name="api_value_2">TISTORY connection with TISTORY API</string>
+    <string name="api_value_3">egloos connection with MetaWeBlog API</string>
+    <!-- <string name="api_value_3">egloos connection with egloos API</string> -->
     <string name="tistoryOAuth_addexblogs2">Tistory OAuth Authorize</string>
-    <string name="egloosOAuth_addexblogs2">egloos OAuth Authorize</string>
+    <string name="egloosOAuth_addexblogs2">egloos MetaWeBlog API Authorize</string>
+    <!-- <string name="egloosOAuth_addexblogs2">egloos OAuth Authorize</string> -->
     <string name="MWBlogAuth_addexblogs2">MetaWeBlog API Authorize</string>
     <string name="title_activity_mwblog_auth_form">Register Your Blog</string>
-    <string name="egloosChooseApiMessage">egloos now supports both MetaWeBlog API and egloos API. What do you want to choose?</string>
-    <string name="egloosChooseApiTitle">Choose API</string>
+    <!-- <string name="egloosChooseApiMessage">egloos now supports both MetaWeBlog API and egloos API. What do you want to choose?</string> -->
+    <!-- <string name="egloosChooseApiTitle">Choose API</string> -->
+    <string name="egloos_id">Egloos ID</string>
+    <string name="egloos_metaApiKey">Egloos API Key</string>
 </resources>
