@@ -49,6 +49,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pw.pbdiary.maeari.blog.AddExBlogS2" />
         </activity>
+        <activity
+            android:name=".MWEgloosAuthForm"
+            android:label="@string/title_activity_mwblog_auth_form">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pw.pbdiary.maeari.blog.AddExBlogS2" />
+        </activity>
+
     </application>
 
 </manifest>
