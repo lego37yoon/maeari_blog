@@ -78,7 +78,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_list) {
 
         } else if (id == R.id.nav_manage) {
-
+            Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_add) {
             Intent intent = new Intent(getApplicationContext(), AddExBlogS1.class);
             startActivity(intent);

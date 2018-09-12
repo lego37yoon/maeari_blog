@@ -60,6 +60,11 @@ public class AddExBlogS2 extends AppCompatActivity {
                         apiEgloos.setVisibility(View.VISIBLE);
                         apiTistory.setVisibility(View.GONE);
                     }
+                    default: {
+                        apiMWBlog.setVisibility(View.GONE);
+                        apiEgloos.setVisibility(View.GONE);
+                        apiTistory.setVisibility(View.GONE);
+                    }
                 }
             }
 
