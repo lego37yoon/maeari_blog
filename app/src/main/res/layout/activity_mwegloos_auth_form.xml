@@ -10,21 +10,23 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/egloos_id"/>
+        android:text="@string/egloos_id" />
     <EditText
         android:id="@+id/egloosIDValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:hint="@string/hint_egloos_id"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/egloos_metaApiKey"/>
+        android:text="@string/egloos_metaApiKey" />
     <EditText
         android:id="@+id/egloosMetaAPIValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:hint="@string/hint_egloos_metaApiKey"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
