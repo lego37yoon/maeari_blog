@@ -2,7 +2,10 @@ package pw.pbdiary.maeari.blog;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.browser.customtabs.CustomTabsIntent;
+import androidx.core.content.ContextCompat;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -17,7 +20,7 @@ public class AddExBlogS2 extends AppCompatActivity {
     private Button apiTistory;
     private Button apiEgloos;
     private Button apiMWBlog;
-
+    private boolean isCustomTabOpened = false;
     private static final int API_OPTION_METAWE = 0;
     private static final int API_OPTION_TISTORY = 1;
     private static final int API_OPTION_EGLOOS = 2;
@@ -82,9 +85,12 @@ public class AddExBlogS2 extends AppCompatActivity {
     }
 
     public void gotoTistoryOAuthWeb(View view) {
-        Intent goTistoryOAuth = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.tistory.com/oauth/authorize?client_id=4043747cf8c75bec8f5ba21c106a8884&redirect_uri=http://localhost&response_type=token"));
-
-        startActivity(goTistoryOAuth);
+        isCustomTabOpened = true;
+        CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+        builder.setToolbarColor(ContextCompat.getColor(this, R.color.colorPrimary));
+        builder.setShowTitle(true);
+        CustomTabsIntent intent = builder.build();
+        intent.launchUrl(this, Uri.parse("https://www.tistory.com/oauth/authorize?client_id=4043747cf8c75bec8f5ba21c106a8884&redirect_uri=http://localhost&response_type=token"));
     }
     /* public void openChooseApiDialog(View view) {
         AlertDialog.Builder egloos_builder = new AlertDialog.Builder(getActivity());
@@ -97,5 +103,15 @@ public class AddExBlogS2 extends AppCompatActivity {
         Intent goEgloosMetaWeAuth = new Intent(getApplicationContext(), MWEgloosAuthForm.class);
 
         startActivity(goEgloosMetaWeAuth);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (isCustomTabOpened) {
+            isCustomTabOpened = false;
+            Intent intent = new Intent(getApplicationContext(),AddExBlogS3_TISTORY.class);
+            startActivity(intent);
+        }
     }
 }
