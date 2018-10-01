@@ -90,7 +90,7 @@ public class AddExBlogS2 extends AppCompatActivity {
         builder.setToolbarColor(ContextCompat.getColor(this, R.color.colorPrimary));
         builder.setShowTitle(true);
         CustomTabsIntent intent = builder.build();
-        intent.launchUrl(this, Uri.parse("https://www.tistory.com/oauth/authorize?client_id=4043747cf8c75bec8f5ba21c106a8884&redirect_uri=http://localhost&response_type=token"));
+        intent.launchUrl(this, Uri.parse("https://www.tistory.com/oauth/authorize?client_id=4043747cf8c75bec8f5ba21c106a8884&redirect_uri=https://latios.pbdiary.pw/tistoyOAuthToken.html&response_type=token"));
     }
     /* public void openChooseApiDialog(View view) {
         AlertDialog.Builder egloos_builder = new AlertDialog.Builder(getActivity());
