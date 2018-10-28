@@ -2,7 +2,6 @@ package pw.pbdiary.maeari.blog;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.core.content.ContextCompat;
 
 import android.content.Context;
@@ -85,12 +84,8 @@ public class AddExBlogS2 extends AppCompatActivity {
     }
 
     public void gotoTistoryOAuthWeb(View view) {
-        isCustomTabOpened = true;
-        CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-        builder.setToolbarColor(ContextCompat.getColor(this, R.color.colorPrimary));
-        builder.setShowTitle(true);
-        CustomTabsIntent intent = builder.build();
-        intent.launchUrl(this, Uri.parse("https://www.tistory.com/oauth/authorize?client_id=4043747cf8c75bec8f5ba21c106a8884&redirect_uri=https://latios.pbdiary.pw/tistoyOAuthToken.html&response_type=token"));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.tistory.com/oauth/authorize?client_id=4043747cf8c75bec8f5ba21c106a8884&redirect_uri=https://latios.pbdiary.pw/tistoyOAuthToken.html&response_type=token"));
+        startActivity(intent);
     }
     /* public void openChooseApiDialog(View view) {
         AlertDialog.Builder egloos_builder = new AlertDialog.Builder(getActivity());
