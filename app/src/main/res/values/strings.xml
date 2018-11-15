@@ -4,6 +4,8 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Add Your Account</string>
+    <string name="delete">Delete</string>
+    <string name="defaultBlog">[MAIN]</string>
     <string name="nav_header_subtitle">Maeari : Default</string>
     <string name="nav_header_desc" translatable="false">Navigation header</string>
     <string name="action_settings">Settings</string>
@@ -108,4 +110,7 @@
     <string name="metaWeBlog_id">MetaWeBlog ID</string>
     <string name="metaApiKey">MetaWeBlog API Key</string>
     <string name="sendmetaAPIvalue">NEXT</string>
+    <string name="failed_to_get_oauth_code">Failed to get OAuth Code</string>
+    <string name="failed_to_get_oauth_token">Failed to get OAuth Token</string>
+    <string name="unknown_request">Unknown Request Code</string>
 </resources>

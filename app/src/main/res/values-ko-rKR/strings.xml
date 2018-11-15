@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">메아리 for Blog</string>
+    <string name="app_name">메아리 for 블로그</string>
     <string name="navigation_drawer_open">메뉴 열기</string>
     <string name="navigation_drawer_close">메뉴 닫기</string>
     <string name="nav_header_title">계정 추가</string>
@@ -9,9 +9,11 @@
     <string name="main_home">계정 관리</string>
     <string name="main_notification">알림</string>
     <string name="add_existed_blog">기존 블로그 추가하기</string>
+    <string name="delete">삭제</string>
+    <string name="defaultBlog">[주 블로그]</string>
     <string name="submenu_title">블로그 목록</string>
     <string name="start_bt_add_exited_blog_s1">시작하기</string>
-    <string name="title_add_exited_blog_s1">"블로그 추가하기 "</string>
+    <string name="title_add_exited_blog_s1">블로그 추가하기</string>
     <string name="img_desc_add_exited_blog_s1">블로그 추가 마법사 설명 이미지</string>
     <string name="desc_add_existed_blog_s1">"기존 블로그를 추가할 수 있습니다. \nMetaWeBlog, 티스토리, 이글루스 API를 지원합니다. "</string>
 
@@ -107,5 +109,8 @@
     <string name="metaWeBlog_id">MetaWeBlog ID</string>
     <string name="metaApiKey">MetaWeBlog API 키</string>
     <string name="sendmetaAPIvalue">다음</string>
+    <string name="failed_to_get_oauth_code">OAuth 인증을 위한 코드를 받아오는 데 실패하였습니다.</string>
+    <string name="failed_to_get_oauth_token">OAuth에 필요한 토큰을 받아오는 데 실패하였습니다.</string>
+    <string name="unknown_request">알 수 없는 요청코드입니다.</string>
 
 </resources>

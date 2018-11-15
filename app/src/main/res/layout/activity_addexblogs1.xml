@@ -11,41 +11,62 @@
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
 
-    <LinearLayout
-        android:id="@+id/text_group_a_e_b_s1"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/add_blog_desc_s1"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:contentDescription="@string/img_desc_add_exited_blog_s1"
-            android:scaleType="fitEnd"
-            android:visibility="visible"
-            app:srcCompat="@drawable/blogadd" />
-
-        <TextView
-            android:id="@+id/fullscreen_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            android:text="@string/title_add_exited_blog_s1"
-            android:textColor="@color/text_addexblogs1"
-            android:textSize="48sp"
-            android:visibility="visible" />
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/desc_add_e_blog_s1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:gravity="end"
             android:text="@string/desc_add_existed_blog_s1"
             android:textColor="@color/text_addexblogs1"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullscreen_content" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="end"
+            android:text="@string/title_add_exited_blog_s1"
+            android:textColor="@color/text_addexblogs1"
+            android:textSize="48sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_blog_desc_s1" />
+
+        <ImageView
+            android:id="@+id/add_blog_desc_s1"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/img_desc_add_exited_blog_s1"
+            android:scaleType="fitEnd"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/blogadd" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:id="@+id/fullscreen_content_controls"

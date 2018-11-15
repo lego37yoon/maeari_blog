@@ -1,4 +1,4 @@
-package db;
+package pw.pbdiary.maeari.blog;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -17,7 +17,7 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         // SQLite Database로 쿼리 실행
-        db.execSQL(" CREATE TABLE BLOGLIST ( _ID INTEGER PRIMARY KEY AUTOINCREMENT, BLOG_NAME TEXT, BLOG_URL TEXT, BLOG_ARTICLE_DB TEXT, BLOG_API_ADDRESS TEXT, BLOG_API_ID TEXT, API_TOKEN TEXT)");
+        db.execSQL(" CREATE TABLE BLOGLIST ( _ID INTEGER PRIMARY KEY AUTOINCREMENT, BLOG_NAME TEXT, BLOG_URL TEXT, BLOG_ARTICLE_DB TEXT, BLOG_API_URL TEXT, BLOG_API_ID TEXT, API_TOKEN TEXT)");
 
     }
 
@@ -26,7 +26,9 @@ public class DBHelper extends SQLiteOpenHelper {
 
     }
 
-    public void testDB() {
-        SQLiteDatabase db = getReadableDatabase();
+    public void addBlog_TISTORY(String blogID,String blogTitle,String blogURL,String blogAPIURL,String blogAPIToken) {
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("CREATE TABLE "+blogID+"_TISTORY_LIST (id INTEGER, ARTICLE_TITLE TEXT, VISIBILITY TEXT, CATEGORY TEXT,DATE TEXT)");
+        db.execSQL("INSERT INTO BLOGLIST SET BLOG_NAME='"+blogTitle+"', BLOG_URL='"+blogURL+"', BLOG_ARTICLE_DB='"+blogID+"_TISTORY_LIST', BLOG_API_URL='TISTORY', API_TOKEN='"+blogAPIToken+"';");
     }
 }
