@@ -10,7 +10,7 @@
     <string name="main_notification">알림</string>
     <string name="add_existed_blog">기존 블로그 추가하기</string>
     <string name="delete">삭제</string>
-    <string name="defaultBlog">[주 블로그]</string>
+    <string name="defaultBlog">주 블로그</string>
     <string name="submenu_title">블로그 목록</string>
     <string name="start_bt_add_exited_blog_s1">시작하기</string>
     <string name="title_add_exited_blog_s1">블로그 추가하기</string>
@@ -23,31 +23,16 @@
 
     <string name="pref_desc_about">"앱 정보와 오픈소스 라이선스 정보를 볼 수 있습니다.\n    "</string>
 
-    <string name="pref_title_display_name">Display name</string>
-    <string name="pref_default_display_name">John Smith</string>
-
-    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
-    <string-array name="pref_example_list_titles">
-        <item>Always</item>
-        <item>When possible</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_example_list_values">
-        <item>1</item>
-        <item>0</item>
-        <item>-1</item>
-    </string-array>
-
     <!-- Example settings for Data & Sync -->
 
     <string name="pref_title_sync_frequency">동기화 빈도</string>
     <string-array name="pref_sync_frequency_titles">
-        <item>15 minutes</item>
-        <item>30 minutes</item>
-        <item>1 hour</item>
-        <item>3 hours</item>
-        <item>6 hours</item>
-        <item>Never</item>
+        <item>15분</item>
+        <item>30분</item>
+        <item>1시간</item>
+        <item>3시간</item>
+        <item>6시간</item>
+        <item>안 함</item>
     </string-array>
     <string-array name="pref_sync_frequency_values">
         <item>15</item>
@@ -87,6 +72,7 @@
     <string name="pref_ringtone_silent">무음</string>
     <string name="pref_header_notifications">알림</string>
     <string name="pref_header_data_sync">데이터 및 동기화</string>
+    <!-- Blog Register -->
     <string name="title_addexblogs2">사용중인 블로그의 \n API를 선택해주세요.</string>
     <string name="title_ab_addexblogs2">블로그 등록하기</string>
     <string name="desc_addexblogs2">현재, 이 앱은 MetaWeBlog API 및 티스토리 API를 지원하고 있습니다. 타 서비스 및 API에 대한 지원은 조금 더 기다려 주세요.</string>
@@ -112,6 +98,7 @@
     <string name="failed_to_get_oauth_code">OAuth 인증을 위한 코드를 받아오는 데 실패하였습니다.</string>
     <string name="failed_to_get_oauth_token">OAuth에 필요한 토큰을 받아오는 데 실패하였습니다.</string>
     <string name="unknown_request">알 수 없는 요청코드입니다.</string>
-    <string name="any_blogs_here">블로그가 존재하지 않습니다. \\n + 버튼으로 추가해 보세요.</string>
+    <string name="any_blogs_here">블로그가 존재하지 않습니다. \n + 버튼으로 추가해 보세요.</string>
+    <string name="failed_to_get_from_server">서버로부터 정보를 불러오지 못했습니다.</string>
 
 </resources>

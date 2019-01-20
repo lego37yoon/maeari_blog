@@ -1,7 +1,5 @@
 package pw.pbdiary.maeari.blog;
 
-import android.content.ContentValues;
-
 import java.io.IOException;
 
 import okhttp3.MediaType;
@@ -22,7 +20,8 @@ public class useAPIData {
     public String getRequest(String _url) throws IOException {
         Request request = new Request.Builder().url(_url).build();
 
-        Response response = client.newCall(request).execute();
-        return response.body().string();
+        try (Response response = client.newCall(request).execute()) {
+            return response.body().string();
+        }
     }
 }

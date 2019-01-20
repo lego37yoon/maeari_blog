@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Add Your Account</string>
     <string name="delete">Delete</string>
-    <string name="defaultBlog">[MAIN]</string>
+    <string name="defaultBlog">MAIN</string>
     <string name="nav_header_subtitle">Maeari : Default</string>
     <string name="nav_header_desc" translatable="false">Navigation header</string>
     <string name="action_settings">Settings</string>
@@ -26,7 +26,7 @@
 
     <string name="pref_desc_about">You can see App Information and Open Source License List.</string>
 
-    <string name="pref_title_display_name">Display name</string>
+    <!-- <string name="pref_title_display_name">Display name</string>
     <string name="pref_default_display_name">John Smith</string>
 
     <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
@@ -39,7 +39,7 @@
         <item>1</item>
         <item>0</item>
         <item>-1</item>
-    </string-array>
+    </string-array> -->
 
     <!-- Example settings for Data & Sync -->
     <string name="pref_header_data_sync">Data and sync</string>
@@ -114,4 +114,5 @@
     <string name="failed_to_get_oauth_token">Failed to get OAuth Token</string>
     <string name="unknown_request">Unknown Request Code</string>
     <string name="any_blogs_here">Empty List \n Add New Blog via + button.</string>
+    <string name="failed_to_get_from_server">Failed to get data from server.</string>
 </resources>

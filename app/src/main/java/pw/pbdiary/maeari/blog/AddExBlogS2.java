@@ -131,7 +131,7 @@ public class AddExBlogS2 extends AppCompatActivity {
             AuthorizationException tistoryException = AuthorizationException.fromIntent(data);
             if (tistoryResponse != null) {
                 Log.d("AUTHCODE",tistoryResponse.authorizationCode);
-                getAccessToken getToken = new getAccessToken("https://www.tistory.com/oauth/access_token?client_id="+BuildConfig.T_APP_ID+"&client_secret="+BuildConfig.T_S_K+"&redirect_url=maeariblog://oauth&code="+tistoryResponse.authorizationCode+"&grant_type=authorization_code");
+                getAccessToken getToken = new getAccessToken("https://www.tistory.com/oauth/access_token?client_id="+BuildConfig.T_APP_ID+"&client_secret="+BuildConfig.T_S_K+"&redirect_uri=maeariblog://oauth&code="+tistoryResponse.authorizationCode+"&grant_type=authorization_code");
                 getToken.execute();
             } else {
                 Snackbar tistoryError = Snackbar.make(findViewById(R.id.addexblogs2),getResources().getString(R.string.failed_to_get_oauth_code),Snackbar.LENGTH_LONG);
@@ -189,6 +189,9 @@ public class AddExBlogS2 extends AppCompatActivity {
         @Override
         protected void onPostExecute(String access_token) {
             Intent i = new Intent(getApplicationContext(),AddExBlogS3_TISTORY.class);
+            String[] arraylist;
+            arraylist = access_token.split("=");
+            access_token = arraylist[1];
             i.putExtra("access_token",access_token);
             Log.d("ACCESS_TOKEN",access_token);
             startActivity(i);

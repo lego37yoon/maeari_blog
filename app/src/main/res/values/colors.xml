@@ -7,4 +7,5 @@
     <color name="black_overlay">#66000000</color>
     <color name="navc_e_blog_s1">#005C7A</color>
     <color name="text_addexblogs1">#9BE5E5</color>
+    <color name="colorActionBar">#FAFAFA</color>
 </resources>
