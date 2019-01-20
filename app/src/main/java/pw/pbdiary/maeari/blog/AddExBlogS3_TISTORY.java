@@ -13,6 +13,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class AddExBlogS3_TISTORY extends AppCompatActivity {
@@ -32,17 +33,20 @@ public class AddExBlogS3_TISTORY extends AppCompatActivity {
 
     public class getBlogInfo extends AsyncTask<Void,Void,String> {
         private String url;
-        private ContentValues values;
         public getBlogInfo(String url,ContentValues values) {
             this.url = url;
-            this.values = values;
         }
         @Override
         protected String doInBackground(Void... voids) {
             String jsonRaw;
             useAPIData getThisBlog = new useAPIData();
-            jsonRaw = getThisBlog.request(url,values);
-            return jsonRaw;
+            try {
+                jsonRaw = getThisBlog.getRequest(url);
+                return jsonRaw;
+            } catch (IOException e) {
+                e.printStackTrace();
+                return e.toString();
+            }
         }
         @Override
         protected void onPostExecute(String jsonRaw) {

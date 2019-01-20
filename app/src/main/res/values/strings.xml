@@ -42,7 +42,7 @@
     </string-array>
 
     <!-- Example settings for Data & Sync -->
-    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_header_data_sync">Data and sync</string>
 
     <string name="pref_title_sync_frequency">Sync frequency</string>
     <string-array name="pref_sync_frequency_titles">
@@ -113,4 +113,5 @@
     <string name="failed_to_get_oauth_code">Failed to get OAuth Code</string>
     <string name="failed_to_get_oauth_token">Failed to get OAuth Token</string>
     <string name="unknown_request">Unknown Request Code</string>
+    <string name="any_blogs_here">Empty List \n Add New Blog via + button.</string>
 </resources>

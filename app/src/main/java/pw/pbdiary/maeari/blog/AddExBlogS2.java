@@ -30,6 +30,8 @@ import net.openid.appauth.ResponseTypeValues;
 import net.openid.appauth.TokenRequest;
 import net.openid.appauth.TokenResponse;
 
+import java.io.IOException;
+
 public class AddExBlogS2 extends AppCompatActivity {
     private Button apiTistory;
     //private Button apiEgloos;
@@ -128,7 +130,8 @@ public class AddExBlogS2 extends AppCompatActivity {
             AuthorizationResponse tistoryResponse = AuthorizationResponse.fromIntent(data);
             AuthorizationException tistoryException = AuthorizationException.fromIntent(data);
             if (tistoryResponse != null) {
-                getAccessToken getToken = new getAccessToken("https://www.tistory.com/oauth/access_token?client_id="+BuildConfig.T_APP_ID+"&client_secret="+BuildConfig.T_S_K+"&redirect_url=maeariblog://oauth&code="+tistoryResponse.authorizationCode);
+                Log.d("AUTHCODE",tistoryResponse.authorizationCode);
+                getAccessToken getToken = new getAccessToken("https://www.tistory.com/oauth/access_token?client_id="+BuildConfig.T_APP_ID+"&client_secret="+BuildConfig.T_S_K+"&redirect_url=maeariblog://oauth&code="+tistoryResponse.authorizationCode+"&grant_type=authorization_code");
                 getToken.execute();
             } else {
                 Snackbar tistoryError = Snackbar.make(findViewById(R.id.addexblogs2),getResources().getString(R.string.failed_to_get_oauth_code),Snackbar.LENGTH_LONG);
@@ -179,16 +182,15 @@ public class AddExBlogS2 extends AppCompatActivity {
 
     public class getAccessToken extends AsyncTask<Void,Void,String> {
         private String url;
-        private ContentValues values;
         public getAccessToken(String url) {
             this.url = url;
-            this.values = values=null;
         }
 
         @Override
         protected void onPostExecute(String access_token) {
             Intent i = new Intent(getApplicationContext(),AddExBlogS3_TISTORY.class);
             i.putExtra("access_token",access_token);
+            Log.d("ACCESS_TOKEN",access_token);
             startActivity(i);
         }
 
@@ -196,8 +198,13 @@ public class AddExBlogS2 extends AppCompatActivity {
         protected String doInBackground(Void... voids) {
             String access_token;
             useAPIData getToken = new useAPIData();
-            access_token = getToken.request(url,values);
-            return access_token;
+            try {
+                access_token = getToken.getRequest(url);
+                return access_token;
+            } catch (IOException e) {
+                e.printStackTrace();
+                return e.toString();
+            }
         }
     }
 }

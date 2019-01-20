@@ -112,5 +112,6 @@
     <string name="failed_to_get_oauth_code">OAuth 인증을 위한 코드를 받아오는 데 실패하였습니다.</string>
     <string name="failed_to_get_oauth_token">OAuth에 필요한 토큰을 받아오는 데 실패하였습니다.</string>
     <string name="unknown_request">알 수 없는 요청코드입니다.</string>
+    <string name="any_blogs_here">블로그가 존재하지 않습니다. \\n + 버튼으로 추가해 보세요.</string>
 
 </resources>
