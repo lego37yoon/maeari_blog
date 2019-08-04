@@ -1,5 +1,6 @@
 # maeari_blog
-제 12회 OSS 개발자대회 출품작. team.FLASH presents.
+제 12회 OSS 개발자대회에 미완성으로 출품했었습니다. team.FLASH 소속으로 개발하였으며, 출품 이후의 개발은 종이상자가 담당합니다.
+2019.11.14 이후 찬찬히 개발 재개 예정입니다.
 
 ## 참고자료
 https://developer.android.com/training/id-auth/authenticate
